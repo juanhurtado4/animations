@@ -10,7 +10,7 @@ body {
   background-color: var(--background-color);
   color: white;
 
-  /* Format */
+  /* Dimension */
   margin: 0;
 
   /* Position */
@@ -28,7 +28,7 @@ p {
   /* Font */
   font-size: 30px;
 
-  /* Format */
+  /* Dimension */
   margin: 1em;
 
   /* Position */
@@ -41,6 +41,11 @@ button {
   background-color: var(--background-color);
   color: white;
 
+  /* Dimension */
+  height: 50px;
+  margin: 1em;
+  width: 200px;
+
   /* Font */
   font-size: 30px;
 
@@ -48,10 +53,7 @@ button {
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: 0px 1.5px;
-  height: 50px;
-  margin: 1em;
   outline: none;
-  width: 200px;
 
   /* Position */
   position: relative;
@@ -61,6 +63,8 @@ button {
 button:active {
   /* Format */
   box-shadow: 0px 0px;
+
+  /* Position */
   top: 1.5px;
 
 }
@@ -69,6 +73,7 @@ input {
   /* Format */
   pointer-events: none;
   opacity: 0;
+
 }
 
 .juanAni {
@@ -93,6 +98,6 @@ input {
 
     /* Position */
     transform: translateY(-30px);
-    
+
   }
 }
