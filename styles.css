@@ -17,6 +17,7 @@ p {
   margin: 1em;
   font-size: 30px;
   color: white;
+  position: relative;
 }
 
 button {
@@ -38,16 +39,6 @@ button:active {
   top: 1.5px;
 }
 
-
-p {
-  position: relative;
-  top: auto;
-  left: 30px;
-}
-
-p:after {
-  content: "";
-}
 
 input {
   opacity: 0;
