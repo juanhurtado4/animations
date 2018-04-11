@@ -1,7 +1,7 @@
 const $input = $("input");
 
 $("button").click(() => {
-  let $copyTxt = $("#first");
+  let $copyTxt = $("#textToCopy");
   let copyTxtCor = {
     height: $copyTxt.innerHeight(),
     width: $copyTxt.innerWidth(),
