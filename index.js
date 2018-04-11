@@ -1,13 +1,34 @@
 const $input = $("input");
 
 $("button").click(() => {
-  let $copyTxt = $("p").text();
+  let $copyTxt = $("#first");
+  let copyTxtCor = {
+    height: $copyTxt.innerHeight(),
+    width: $copyTxt.innerWidth(),
+    top: $copyTxt.position().top,
+    left: $copyTxt.position().left
+  }
+  let $copyTxtFade = $("<p></p>").text($copyTxt.text()).css({
+    "height": copyTxtCor.height,
+    "width": copyTxtCor.width,
+    "top": copyTxtCor.top,
+    "left": copyTxtCor.left,
+    "position": "absolute"
+  })
+  console.log($copyTxtFade.width());
+  console.log(copyTxtCor.width);
 
-  $("#first").addClass("juanAni")
+  $copyTxt.after($copyTxtFade);
 
-  $input.val($("#second").text()).select();
+  // $copyTxt.addClass("juanAni");
+  $copyTxtFade.addClass("juanAni");
+
+  // $input.val($copyTxt.text()).select();
+  $input.val($copyTxtFade.text()).select();
   document.execCommand("Copy");
+
   setTimeout(() => {
-  $("#first").removeClass("juanAni");
+  $copyTxtFade.remove();
   }, 1000);
+
 });
