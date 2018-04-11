@@ -1,7 +1,7 @@
 /*
  * Title: Copy UI Feature with Animation
- * Description: Example of a useful feature for the user to copy text from a click of a button.
- * Ghosting animation is used to provide feedback that item was copied.
+ * Description: Example of a useful feature for the user to copy text from a click of a button
+ * Ghosting animation is used to provide feedback that item was copied
  * Author: Juan Hurtado
  * Date: 04/11/2018
  *
