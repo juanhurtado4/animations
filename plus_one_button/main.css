@@ -6,68 +6,97 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  height: 700px;
-  align-items: center;
-  background-color: var(--blue);
+    /* Color */
+    background-color: var(--blue);
+
+    /* Dimensions */
+    height: 700px;
+
+    /* Position */
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
 }
 
 .btn {
-  padding: 1em 3em;
-  border: 1px solid var(--grey);
-  border-radius: 15px;
-  font-size: 20px;
-  margin-right: 20px;
-  color: var(--grey);
-  background-color: var(--blue);
-  font-family: menlo;
+    /* Color */
+    background-color: var(--blue);
+    color: var(--grey);
+
+    /* Format */
+    border: 1px solid var(--grey);
+    border-radius: 15px;
+    margin-right: 20px;
+    padding: 1em 3em;
+
+    /* Font */
+    font-size: 20px;
+    font-family: menlo;
+
 }
 
 .btn:hover {
-  color: #d2d5de;
-  border-color: #d2d5de;
+    /* Color */
+    border-color: #d2d5de;
+    color: #d2d5de;
 }
 
 .btn-reset {
-  margin-left: 1em;
-  color: #EE807C;
-  border: 1px solid #EE807C;
+    /* Color */
+    color: #EE807C;
+    
+    /* Format */
+    border: 1px solid #EE807C;
+    margin-left: 1em;
+
 }
 
 .btn-reset:hover {
-  border-color: #A3585B;
-  color: #A3585B;
+    /* Color */
+    color: #A3585B;
+    border-color: #A3585B;
 }
 
 .btn:focus {
-  outline: none;
+    /* Format */
+    outline: none;
 }
 
 span {
-  font-size: 50px;
-  color: var(--green);
+    /* Color */
+    color: var(--green);
+
+    /* Font */
+    font-size: 50px;
 }
 
 .plus-ani {
-  margin-bottom: 20px;
-  color: #66b049;
+    /* Color */
+    color: #66b049;
+
+    /* Format */
+    margin-bottom: 20px;
 }
 
 .btn {
-  transition-property: text-shadow, opacity;
-  transition-duration: 1s;
-  transition-timing-function: ease-in-out;
+    /* Animation */
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-property: text-shadow, opacity;
 
 }
 
 .btn:hover {
-  text-shadow: 0px -30px var(--dark-green);
-  opacity: 0;
+    /* Format */
+    text-shadow: 0px -30px var(--dark-green);
+    opacity: 0;
 }
 
 .reset-ani {
-  color: #DF857E;
-  margin-top: 20px;
+    /* Color */
+    color: #DF857E;
+
+    /* Format */
+    margin-top: 20px;
 }
