@@ -1,37 +1,49 @@
 body {
-  /* Dimension */
+/* Dimension */
   height: 678px;
   margin: 0px;
-  /* Position */
+
+/* Position */
   align-items: center;
   display: flex;
   justify-content: center;
+
 }
 
-.shape, .circle, .rectangle, .square {
-  /* Animation */
+.shape {
+/* Animation */
   transition: all 1s;
   transition-property: transform, border-radius;
-  /* Color */
+
+/* Color */
   background: darkturquoise;
-  /* Dimension */
+
+/* Dimension */
   height: 100px;
   width: 100px;
+
 }
 
 .square {
-  /* Format */
+/* Format */
+  @extend .shape;
   border-radius: 5px;
+
 }
 
 .rectangle {
-  /* Animation */
+/* Animation */
   transform: scale(2, 1);
-  /* Format */
+
+/* Format */
   border-radius: 5px;
+  @extend .shape;
+
 }
 
 .circle {
-  /* Format */
+/* Format */
+  @extend .shape;
   border-radius: 50px;
+
 }
