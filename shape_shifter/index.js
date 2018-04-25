@@ -12,7 +12,7 @@ shape.addEventListener('click', () => {
   shape.classList.remove(shapes[nextIndex]);
 
   // Pick next shape without going out of bounds in the arr
-  nextIndex = nextIndex === shapes.length - 1 ? 0 : nextIndex + 1
+  nextIndex = nextIndex === shapes.length - 1 ? 0 : nextIndex + 1;
 
   // Create next shape
   shape.classList.add(shapes[nextIndex]);
