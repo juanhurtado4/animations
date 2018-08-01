@@ -1,0 +1,49 @@
+body {
+/* Dimension */
+  height: 678px;
+  margin: 0px;
+
+/* Position */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.shape {
+/* Animation */
+  transition: all 1s;
+  transition-property: transform, border-radius;
+
+/* Color */
+  background: darkturquoise;
+
+/* Dimension */
+  height: 100px;
+  width: 100px;
+
+}
+
+.square {
+/* Format */
+  @extend .shape;
+  border-radius: 5px;
+
+}
+
+.rectangle {
+/* Animation */
+  transform: scale(2, 1);
+
+/* Format */
+  border-radius: 5px;
+  @extend .shape;
+
+}
+
+.circle {
+/* Format */
+  @extend .shape;
+  border-radius: 50px;
+
+}
