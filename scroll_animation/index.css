@@ -1,0 +1,46 @@
+.container {
+  height: 2000px;
+  background-color: tomato;
+  font-size: 50px;
+  text-align: center;
+}
+
+html {
+  background-color: tomato;
+  color: white;
+}
+
+.title {
+  padding-top: 40vh;
+  margin: 0;
+  /* transition: transform 0.8s; */
+}
+
+.animation-title {
+  animation-name: mymove;
+  animation-duration: 2s;
+}
+
+@keyframes mymove {
+  from {
+    transform: translatex(0px);
+  }
+
+  to {
+    transform: translatex(350px);
+  }
+}
+.animation-sub {
+  animation-name: submy;
+  animation-duration: 2s;
+}
+
+@keyframes submy {
+  from {
+    transform: translatex(0px);
+  }
+
+  to {
+    transform: translatex(-350px);
+  }
+}
