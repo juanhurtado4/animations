@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  display: flex;
+}
+
+.main {
+  height: 300px;
+  width: 100%;
+  background-color: teal;
+  display: flex;
+  justify-content: flex-end;
+  font: 40px sans-serif;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.menu > main {
+  padding: 15px;
+}
+
+.menu {
+  height: 300px;
+  width: 0%;
+  background-color: tomato;
+  display: flex;
+  justify-content: flex-end;
+  font: 40px sans-serif;
+  box-sizing: border-box;
+}
+
+.animate-expand {
+  width: 40%;
+  animation: expand .5s;
+}
+
+.animate-collapse {
+  width: 0%;
+  animation: collapse .5s;
+}
+
+@keyframes expand {
+  from { width: 0% }
+  to { width: 40% }
+}
+
+@keyframes collapse {
+  from { width: 40% }
+  to { width: 0% }
+}
