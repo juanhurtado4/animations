@@ -1,0 +1,61 @@
+body * {
+    /*   border: 1px solid red; */
+}
+
+body {
+    margin: 0;
+    background-color: teal;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    color: transparent;
+    height: 300px;
+    background-color: transparent;
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+h1:hover ~ .content {
+    color: black;
+    background-color: white;
+}
+
+h1:hover ~ .caret {
+    border-color: transparent transparent white;
+}
+
+.caret {
+    position: relative;
+    display: block;
+    width: 2px;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent;
+    top: 2px;
+    /*left: calc(50% - 10px); */
+    z-index: 1;
+}
