@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div {
+  outline: 1px solid black;
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  transition: background-color .5s;
+}
+
+div:hover {
+  background-color: black;
+  transition: background .5s;
+}
+
+div:after {
+  content: "hover me";
+  position: absolute;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(10);
+  transition: color .5s, transform .5s;
+  pointer-events: none;
+}
+
+div:hover:after {
+  color: white;
+  animation-fill-mode: forwards;
+  transition: color .5s, transform .5s;
+  transform: scale(1);
+}
+
+@keyframes scale-down {
+  from { transform: scale(10); }
+  to { transform: scale(1); }
+}
+
